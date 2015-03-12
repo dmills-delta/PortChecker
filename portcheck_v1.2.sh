@@ -2,9 +2,9 @@
 
 #Checks whether the SSH port is open.
 
-nc -z -w5 213.104.177.5 9999; echo "$?" > portcheck_log.txt
-
 while true; do
+
+nc -z -w5 213.104.177.5 9999; echo "$?" > portcheck_log.txt
 
 val=$(cat portcheck_log.txt)
 
